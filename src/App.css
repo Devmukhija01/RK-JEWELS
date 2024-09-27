@@ -1,38 +1,76 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #f8f8f8;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+
+@media (max-width: 768px) { /* Tablets and Mobile */
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar a {
+      padding: 15px;
+      width: 100%; /* Make links full width */
+  }
+
+  .header h1 {
+      font-size: 24px; /* Adjust header size for smaller screens */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 480px) { /* Mobile Devices */
+  .navbar a {
+      padding: 10px;
+      font-size: 14px; /* Smaller font size for mobile */
   }
-  to {
-    transform: rotate(360deg);
+
+  .header h1 {
+      font-size: 20px; /* Further adjust header size for mobile */
+  }
+}
+
+/* Styles for larger screens like TVs */
+@media (min-width: 1200px) { /* TVs */
+  .navbar {
+      padding: 20px 0;
+  }
+
+  .navbar a {
+      font-size: 20px; /* Larger font size for TVs */
+  }
+
+  .header h1 {
+      font-size: 48px; /* Larger header for TVs */
   }
 }

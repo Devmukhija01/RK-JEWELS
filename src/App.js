@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import Header from './Components/Header'; // Ensure you have this line
+import Home from './Components/Home';
+import About from './Components/About';
+import Contact from './Components/Contact';
+import Shop from './Components/Shop';
+import Necklaces from './Components/Necklaces'; // Import Necklaces component
+import Rings from './Components/Rings';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <Router>
+            <div className="App">
+                <Navbar />
+                <Header /> {/* Ensure the Header component is rendered */}
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/shop" element={<Shop />} />
+                    <Route path="/necklaces" element={<Necklaces />} /> {/* Route for Necklaces */}
+                    <Route path="/rings" element={<Rings />} /> {/* Route for Rings */}
+                </Routes>
+            </div>
+        </Router>
+    );
+};
 
 export default App;

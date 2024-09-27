@@ -1,0 +1,100 @@
+.shop-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for a clean look */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Modern font for better readability */
+}
+
+.shop-container h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+.shop-container p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 50px;
+    line-height: 1.6; /* Improved line height for better readability */
+}
+
+/* Video Section */
+.shop-videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.video-container {
+    text-align: center;
+    background-color: #fff; /* White background for video containers */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Slightly darker shadow */
+    transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.video-container:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.video-container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for video */
+}
+
+/* Responsive Styling for Smaller Devices */
+@media (max-width: 768px) {
+    .shop-container h1 {
+        font-size: 2rem;
+    }
+
+    .shop-container p {
+        font-size: 1rem;
+    }
+
+    .video-container h2 {
+        font-size: 1.5rem;
+    }
+
+    video {
+        max-width: 100%;
+    }
+}
+
+/* Button Styles */
+.view-collection-button {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 12px 25px; /* Increased padding for better touch target */
+    font-size: 1.1em; /* Slightly larger font size */
+    color: #fff;
+    background-color: #9c89a9; /* Primary blue color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.view-collection-button:hover {
+    background-color: #9c89a9;
+    transform: translateY(-3px); /* Lift effect on hover */
+}

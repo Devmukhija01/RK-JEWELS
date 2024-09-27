@@ -1,0 +1,52 @@
+.header {
+    background-image: url('perfectGift3.jpg'); /* Replace with an elegant background image */
+    background-size: cover; /* Ensure the image covers the header */
+    background-position: center; /* Center the background image */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center the text */
+    padding: 80px 20px; /* Generous padding for aesthetics */
+    position: relative; /* Position for overlay effects */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Dark overlay for contrast */
+    z-index: 1; /* Position below text */
+}
+
+.header h2 {
+    font-size: 3rem; /* Large title size */
+    font-weight: 700; /* Bold weight for prominence */
+    margin: 0; /* Remove default margin */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+}
+
+.header p {
+    font-size: 1.5rem; /* Subtitle size */
+    margin: 20px 0 0; /* Space below the subtitle */
+    font-weight: 300; /* Lighter weight for elegance */
+    line-height: 1.5; /* Improved line spacing */
+    max-width: 800px; /* Constrain width for readability */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 60px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .header h2 {
+        font-size: 2.5rem; /* Smaller title on mobile */
+    }
+
+    .header p {
+        font-size: 1.2rem; /* Smaller subtitle on mobile */
+    }
+}

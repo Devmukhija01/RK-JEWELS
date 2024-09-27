@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background for cleanliness */
+    color: #333; /* Consistent text color */
+}
+
+.collection-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    border-radius: 12px; /* Slightly more rounded corners */
+}
+
+/* Collection Header */
+.collection-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Main container for the necklaces section */
+.necklaces-container {
+    text-align: center; /* Center align all text within this container */
+    padding: 40px 20px; /* Add some padding for spacing */
+}
+
+/* Necklaces title styling */
+.necklaces-title {
+    font-size: 2.5rem; /* Large font size for visibility */
+    color: #333; /* Dark color for contrast */
+    margin: 0; /* Remove default margin */
+    animation: fadeInUp 0.8s ease; /* Animation effect on load */
+    text-transform: uppercase; /* Capitalize text */
+}
+
+/* Keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End in the original position */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .necklaces-title {
+        font-size: 2rem; /* Slightly smaller for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .necklaces-title {
+        font-size: 1.5rem; /* Further reduce for mobile devices */
+    }
+}
+
+.collection-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 10px auto 0;
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+/* Grid Layout */
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increased min width */
+    gap: 30px; /* Reduced gap for a tighter layout */
+}
+
+/* Collection Item Styles */
+.collection-item1 {
+    background-color: #fff; /* White background for cards */
+    border-radius: 12px; /* More rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Combined transition properties */
+    max-width: 320px; /* Slightly increased max-width for items */
+    margin: 20px 50px; /* Center the item */
+}
+
+.collection-item1:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Image Styling */
+.collection-item1 img {
+    width: 100%;
+    height: 250px; /* Maintain a compact look */
+    object-fit: cover; /* Maintains aspect ratio */
+    transition: transform 0.3s ease; /* Smooth scale effect */
+}
+
+.collection-item1:hover img {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Text Content */
+.collection-item1 h2 {
+    font-size: 1.4rem; /* Adjusted font size for a cooler look */
+    font-weight: 600;
+    color: #333; /* Consistent text color */
+    margin: 15px 0 10px; /* Adjusted margins */
+    text-align: center;
+}
+
+.collection-item1 p {
+    font-size: 0.9rem; /* Reduced font size for a cleaner appearance */
+    color: #777;
+    text-align: center;
+    margin: 0 10px 20px; /* Reduced horizontal margin */
+    line-height: 1.5; /* Improved readability */
+}
+
+/* Price and Button Section */
+.collection-price {
+    font-size: 1.2rem; /* Adjusted font size */
+    font-weight: 600;
+    color: #ff6f61; /* Eye-catching price color */
+    text-align: center;
+    margin: 10px 0;
+}
+
+.collection-btn {
+    display: inline-block; /* Changed to inline-block for better button alignment */
+    margin: 0 auto 20px;
+    padding: 10px 20px; /* Adjusted padding */
+    background-color: #ff6f61; /* Primary button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 0.9rem; /* Reduced font size */
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Combined transitions */
+}
+
+.collection-btn:hover {
+    background-color: #e85a50; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .collection-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .collection-header p {
+        font-size: 1rem;
+    }
+
+    .collection-item1 h2 {
+        font-size: 1.4rem;
+    }
+
+    .collection-price {
+        font-size: 1.2rem;
+    }
+
+    .collection-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .collection-header h1 {
+        font-size: 2rem;
+    }
+
+    .collection-header p {
+        font-size: 0.9rem;
+    }
+
+    .collection-item1 h2 {
+        font-size: 1.2rem;
+    }
+
+    .collection-price {
+        font-size: 1rem;
+    }
+
+    .collection-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+}

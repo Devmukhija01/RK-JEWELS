@@ -1,0 +1,217 @@
+/* Main container for the about section */
+.about-container {
+    max-width: 1200px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the container */
+    padding: 60px 20px; /* Padding around the container */
+    background-color: #fafafa; /* Light background for contrast */
+    border-radius: 10px; /* Smooth, rounded edges */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* About Us heading styling */
+.about-content h2 {
+    font-size: 2.5rem; /* Large and bold heading */
+    text-align: center; /* Center the heading */
+    color: #333; /* Darker heading color */
+    margin-bottom: 20px; /* Space below the heading */
+    text-transform: uppercase; /* Capitalized heading for impact */
+}
+
+/* About Us text content styling */
+.about-content p {
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    color: #555; /* Muted text color */
+    line-height: 1.6; /* Comfortable line spacing */
+    margin-bottom: 20px; /* Space below paragraphs */
+    text-align: justify; /* Justified text for a cleaner look */
+}
+
+/* Styling for shop details section */
+/* From Uiverse.io by mrhyddenn */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Full viewport height for centering */
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.card_box {
+    width: 300px; /* Adjusted width for better content fit */
+    border-radius: 20px;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+    transition: all 0.3s;
+    overflow: hidden; /* Contain inner elements */
+    padding: 20px; /* Inner padding for aesthetics */
+}
+
+.card_box:hover {
+    transform: scale(0.95); /* Slight scale down on hover */
+}
+
+.card_box span {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 40px;
+    top: -20px; /* Adjusted for better positioning */
+    left: -20px; /* Adjusted for better positioning */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_box span::before {
+    content: 'Premium';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144 51%, #ff7053 100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.card_box span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+/* Shop Details Styling */
+/* From Uiverse.io by mrhyddenn */ 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_box {
+    width: 350px; /* Increased width of the parent div */
+    height: 350px; /* Keep the height as needed */
+    border-radius: 20px;
+    background: linear-gradient(45deg, #a77b9d 0%, #9c89a9 51%, #8b7da1 100%);
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+    transition: all .3s;
+    padding: 20px; /* Add padding for inner content */
+}
+
+.card_box:hover {
+    transform: scale(0.9);
+}
+
+.card_box span {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_box span::before {
+    content: 'RK JEWELS';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #a77b9d 0%, #9c89a9 51%, #8b7da1 100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+
+.card_box span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #a77b9d 0%, #9c89a9 51%, #8b7da1 100%);
+}
+
+.shop-details {
+    text-align: center; /* Center text for better presentation */
+    padding: 10px; /* Add padding inside the details section */
+    background-color: transparent; /* Remove background color */
+    /* Removed border-radius */
+}
+
+.shop-details h3 {
+    margin-bottom: 15px; /* Space below heading */
+    font-size: 1.5em; /* Slightly larger font size */
+    font-weight: bold; /* Bold heading */
+    color: #ffffff; /* White color for contrast */
+}
+
+.shop-details ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.shop-details li {
+    margin: 10px 0; /* Space between list items */
+    font-size: 1.1em; /* Increased font size for readability */
+    line-height: 1.5; /* Improved line height for clarity */
+    color: #f0f0f0; /* Lighter text color for better readability */
+}
+
+.shop-details li strong {
+    color: #ffb144; /* Color for strong text to highlight */
+}
+.social-media {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 20px; /* Set a suitable gap between icons */
+    margin-top: 20px; /* Keep consistent margin from the top */
+}
+
+.social-media a {
+    font-size: 1.8rem; /* Icon size */
+    color: #fff; /* Default icon color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px; /* Circular shape width */
+    height: 55px; /* Circular shape height */
+    border-radius: 50%; /* Circular border */
+    border: 2px solid #fff; /* Circular border color */
+    transition: all 0.3s ease;
+    text-decoration: none; /* Remove underline */
+}
+
+.social-media a:hover {
+    background-color: #fff; /* Background color on hover */
+    color:#9c89a9 ; /* Icon color on hover */
+    transform: scale(1.1); /* Slightly larger zoom effect on hover */
+}
