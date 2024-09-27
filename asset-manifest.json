@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/RK-JEWELS/static/css/main.9a232119.css",
+    "main.js": "/RK-JEWELS/static/js/main.951f773c.js",
+    "static/js/453.755f42df.chunk.js": "/RK-JEWELS/static/js/453.755f42df.chunk.js",
+    "static/media/rings.mp4": "/RK-JEWELS/static/media/rings.c03c51d5147eb21ccff6.mp4",
+    "static/media/necklaces.mp4": "/RK-JEWELS/static/media/necklaces.f492890a7b286ac26f12.mp4",
+    "static/media/perfectGift2.jpg": "/RK-JEWELS/static/media/perfectGift2.1d4808a51715e1fa4ca4.jpg",
+    "static/media/fa-solid-900.ttf": "/RK-JEWELS/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/Silver nacklaces.jpg": "/RK-JEWELS/static/media/Silver nacklaces.4ebf353f0223027aa6c9.jpg",
+    "static/media/perfectGift3.jpg": "/RK-JEWELS/static/media/perfectGift3.2cb0698bcc203d60d93e.jpg",
+    "static/media/fa-brands-400.ttf": "/RK-JEWELS/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/RK-JEWELS/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/Gold.jpg": "/RK-JEWELS/static/media/Gold.8a8eb1fd40cc1355a25a.jpg",
+    "static/media/fa-brands-400.woff2": "/RK-JEWELS/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/Diamond ring.jpg": "/RK-JEWELS/static/media/Diamond ring.93fc92f868df587262f1.jpg",
+    "static/media/fa-regular-400.ttf": "/RK-JEWELS/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/RK-JEWELS/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/RK-JEWELS/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/RK-JEWELS/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/RK-JEWELS/index.html",
+    "main.9a232119.css.map": "/RK-JEWELS/static/css/main.9a232119.css.map",
+    "main.951f773c.js.map": "/RK-JEWELS/static/js/main.951f773c.js.map",
+    "453.755f42df.chunk.js.map": "/RK-JEWELS/static/js/453.755f42df.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a232119.css",
+    "static/js/main.951f773c.js"
+  ]
+}
