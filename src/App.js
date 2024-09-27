@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'; // Add Navigate
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import Home from './Components/Home';
@@ -24,8 +24,6 @@ const App = () => {
                     <Route path="/shop" element={<Shop />} />
                     <Route path="/necklaces" element={<Necklaces />} />
                     <Route path="/rings" element={<Rings />} />
-                    {/* Redirect any other routes to the Necklaces page */}
-                    <Route path="*" element={<Navigate to="/necklaces" replace />} />
                 </Routes>
             </div>
         </Router>
