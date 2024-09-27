@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Not Found</title>
-    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      // Redirect logic
+      const urlPath = window.location.pathname;
+
+      if (urlPath.includes("necklaces")) {
+        window.location.href = "/necklaces"; // Redirect to necklaces page
+      } else if (urlPath.includes("rings")) {
+        window.location.href = "/rings"; // Redirect to rings page
+      } else {
+        // Default redirect to home
+        window.location.href = "/";
+      }
+    </script>
   </head>
   <body>
     <p>If you are not redirected automatically, follow the <a href="/">link to the home page</a>.</p>
