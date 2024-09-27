@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RK-JEWELS/static/css/main.9a232119.css",
-    "main.js": "/RK-JEWELS/static/js/main.11552b1b.js",
+    "main.js": "/RK-JEWELS/static/js/main.951f773c.js",
     "static/js/453.755f42df.chunk.js": "/RK-JEWELS/static/js/453.755f42df.chunk.js",
     "static/media/rings.mp4": "/RK-JEWELS/static/media/rings.c03c51d5147eb21ccff6.mp4",
     "static/media/necklaces.mp4": "/RK-JEWELS/static/media/necklaces.f492890a7b286ac26f12.mp4",
@@ -20,11 +20,11 @@
     "static/media/fa-v4compatibility.woff2": "/RK-JEWELS/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/RK-JEWELS/index.html",
     "main.9a232119.css.map": "/RK-JEWELS/static/css/main.9a232119.css.map",
-    "main.11552b1b.js.map": "/RK-JEWELS/static/js/main.11552b1b.js.map",
+    "main.951f773c.js.map": "/RK-JEWELS/static/js/main.951f773c.js.map",
     "453.755f42df.chunk.js.map": "/RK-JEWELS/static/js/453.755f42df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a232119.css",
-    "static/js/main.11552b1b.js"
+    "static/js/main.951f773c.js"
   ]
 }
