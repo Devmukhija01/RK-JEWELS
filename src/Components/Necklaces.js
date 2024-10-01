@@ -1,6 +1,6 @@
 import React from 'react';
 import './Necklaces.css'; // For additional CSS specific to this component
-import Image1 from '../Images/Silver nacklaces.jpg';
+import Image1 from '../Images/C U T E.jpeg';
 import Image2 from '../Images/Silver nacklaces.jpg';
 const Necklaces = () => {
     return (

@@ -5,11 +5,12 @@
     gap: 15px; /* Increased gap for better spacing */
     max-width: 400px; /* Increased max width for larger screens */
     background-color: #ffffff; /* Clean white background */
-    padding: 30px; /* More padding for spacious feel */
+    padding: 30px; /* More padding for a spacious feel */
     border-radius: 15px; /* Slightly reduced border radius for elegance */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     position: relative;
-    margin: 0 auto; /* Center the form horizontally */
+    margin: 100px auto; /* Adjusted top margin to push form below navbar */
+    z-index: 100; /* Ensure form stays on top */
 }
 
 /* Title styling */

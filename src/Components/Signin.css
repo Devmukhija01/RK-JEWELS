@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fc;
+  padding-bottom: 50px; /* Ensures there's enough space at the bottom */
+}
+
+.signin-container {
+  position: relative; /* Ensures proper positioning */
+  top: 80px; /* Adjust this value according to your navbar's height */
+  margin: 0 auto; /* Center the form horizontally */
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 100; /* Ensures it's placed above other components */
+}
+
+.form-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333333;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333333;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #9c89a9;
+}
+
+.login-btn,
+.signup-btn {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #9c89a9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: #876a92; /* Darker shade for hover effect */
+}
+
+.form-footer {
+  margin-top: 1.5rem; /* Increased margin for better spacing */
+  text-align: center;
+  color: #555555;
+  font-size: 0.9rem; /* Slightly smaller font size for footer */
+}
+
+.form-switch {
+  color: #9c89a9;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 0.5rem; /* Margin to separate from button */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.form-switch:hover {
+  color: #735f80; /* Darker shade for hover effect */
+}
+
+@media (max-width: 768px) {
+  .signin-container {
+    width: 90%;
+    padding: 1.5rem;
+    top: 100px; /* Increased top margin for better spacing on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .signin-container {
+    width: 95%;
+    padding: 1.2rem;
+    top: 120px; /* Further increase for very small screens */
+  }
+
+  .form-title {
+    font-size: 1.6rem; /* Adjusted title size for smaller screens */
+  }
+}

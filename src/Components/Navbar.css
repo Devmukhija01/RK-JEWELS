@@ -21,19 +21,43 @@
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: flex; /* Use flexbox for navbar */
+    height: 80px;
+    justify-content: space-between; /* Space between title and links */
+    align-items: center; /* Center items vertically */
     background-color: #9c89a9; /* Dark purple background */
-    padding: 5px 30px; /* Increased padding for a more spacious look */
+    padding: 10px 30px; /* Increased padding for a more spacious look */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     position: sticky; /* Fixed position to keep the navbar at the top */
     top: 0; /* Positioning */
     z-index: 1000; /* Ensure it stays above other elements */
-    
+}
+
+/* Navbar Title */
+.navbar-title {
+    font-family: 'Playfair Display', serif;  /* Use a professional, elegant font */
+    font-size: 2rem;  /* Adjust title size */
+    font-weight: 700;  /* Bold for emphasis */
+    color: #fff;  /* Dark color for good contrast */
+    text-transform: uppercase;  /* Make text uppercase for a strong look */
+    letter-spacing: 2px;  /* Add letter spacing for a cleaner look */
+    margin: 0;
+    animation: fadeInSlideUp 1s ease-out forwards;  /* Custom animation */
+    opacity: 0;  /* Initially hidden */
+    position: relative;  /* For shadow effect */
+    z-index: 1;  /* Ensure the title stays on top */
+    transition: all 0.3s ease-in-out;  /* Smooth hover effects */
 }
 
 /* Navbar Links */
+.navbar-links {
+    display: flex; /* Align links horizontally */
+    align-items: center; /* Center align items vertically */
+    gap: 20px; /* Space between links */
+    padding: 10px;
+}
+
+/* Navbar Links Styles */
 .navbar a {
     color: white; /* White text for contrast */
     text-decoration: none; /* No underline on links */
@@ -52,30 +76,20 @@
 /* Responsive Styles */
 @media (max-width: 768px) { /* Tablets and Mobile */
     .navbar {
-        flex-direction: column; /* Stack links vertically on smaller screens */
-        align-items: stretch; /* Stretch links to fill the navbar */
+        flex-direction: column; /* Stack title and links vertically on smaller screens */
+        align-items: stretch; /* Stretch title and links to fill the navbar */
+    }
+
+    .navbar-links {
+        flex-direction: row; /* Ensure links are horizontal on smaller screens */
+        gap: 10px; /* Adjust gap for mobile */
     }
 
     .navbar a {
-        width: 100%; /* Full width for mobile links */
+        width: auto; /* Set width to auto for links */
         text-align: center; /* Center text for mobile */
         padding: 15px; /* Increased padding for touch targets */
     }
-}
-/* Initial Title Styling */
-.navbar-title {
-    font-family: 'Playfair Display', serif;  /* Use a professional, elegant font */
-    font-size: 2rem;  /* Adjust title size */
-    font-weight: 700;  /* Bold for emphasis */
-    color: #fff;  /* Dark color for good contrast */
-    text-transform: uppercase;  /* Make text uppercase for a strong look */
-    letter-spacing: 2px;  /* Add letter spacing for a cleaner look */
-    margin: 0;
-    animation: fadeInSlideUp 1s ease-out forwards;  /* Custom animation */
-    opacity: 0;  /* Initially hidden */
-    position: relative;  /* For shadow effect */
-    z-index: 1;  /* Ensure the title stays on top */
-    transition: all 0.3s ease-in-out;  /* Smooth hover effects */
 }
 
 /* Hover Effect: Glowing Text Shadow */
